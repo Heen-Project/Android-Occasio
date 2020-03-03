@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="PREFERENCES_KEY_USER">sharedPreferences_User</string>
+    <string name="USER_ID">userId</string>
+    <string name="PROVIDER">provider</string>
+    <string name="USERNAME">username</string>
+    <string name="EMAIL">email</string>
+    <string name="PROFILE_IMAGE_URL">profileImageURL</string>
+    <string name="IMAGE_STRING">imageString</string>
+    <string name="PASSWORD">password</string>
+</resources>

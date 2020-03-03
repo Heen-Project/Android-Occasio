@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Header-->
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/profile_wallpaper"
+            />
+
+        <!-- Content-->
+        <LinearLayout
+            android:id="@+id/lt_group_passwordProvider_fProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/header"
+            android:gravity="center"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/profileUsername_fProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:text="username"/>
+            <TextView
+                android:id="@+id/profileEmail_fProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/colorText"
+                android:text="email"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/sw_changePassword_fProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@color/colorText"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="Change Password" />
+
+                    <Switch
+                        android:id="@+id/sw_removeAccount_fProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@color/colorText"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="Remove Account" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lt_changePassword_fProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_txtOldPassword_changePassword_fProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorText">
+
+                        <EditText
+                            android:id="@+id/txtOldPassword_changePassword_fProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Old Password"
+                            android:inputType="textPassword"
+                            android:textColor="@color/colorText"
+                            android:theme="@style/ThemeEditText" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_txtNewPassword_changePassword_fProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorText">
+
+                        <EditText
+                            android:id="@+id/txtNewPassword_changePassword_fProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="New Password"
+                            android:inputType="textPassword"
+                            android:textColor="@color/colorText"
+                            android:theme="@style/ThemeEditText" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_txtNewPasswordVerification_changePassword_fProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorText">
+
+                        <EditText
+                            android:id="@+id/txtNewPasswordVerification_changePassword_fProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="New Password Verification"
+                            android:inputType="textPassword"
+                            android:textColor="@color/colorText"
+                            android:theme="@style/ThemeEditText" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnChangePassword_fProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Change Password"
+                        android:textColor="@color/colorText"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimaryDark"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lt_removeAccount_fProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_txtPassword_removeAccount_fProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorText">
+
+                        <EditText
+                            android:id="@+id/txtPassword_removeAccount_fProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:textColor="@color/colorText"
+                            android:theme="@style/ThemeEditText" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnRemoveAccount_fProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Remove Account"
+                        android:textColor="@color/colorText"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimaryDark"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_group_facebookProvider_fProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/lt_group_passwordProvider_fProfile">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="35dp">
+
+                <TextView
+                    android:id="@+id/profileUsername_facebook_fProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/colorText"
+                    android:textStyle="bold|italic"
+                    android:textSize="20sp"
+                    android:text="username"/>
+
+                <TextView
+                    android:id="@+id/email_facebook_fProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorText"
+                    android:text="email"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorText"
+                    android:text="You're signin with"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_fb"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Header Profile Pic-->
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profilePicture_fProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/lt_group_passwordProvider_fProfile"
+            android:layout_marginBottom="-25dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profilePicture_facebook_fProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/lt_group_facebookProvider_fProfile"
+            android:layout_marginBottom="-25dp"/>
+
+    </RelativeLayout>
+</ScrollView>

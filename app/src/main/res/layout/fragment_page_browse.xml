@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorText">
+        <EditText
+            android:id="@+id/browse_text_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:hint="@string/hint_search"
+            android:layout_margin="8dp"
+            android:background="@color/colorText"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/colorSelected"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/browse_btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_search"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/browse_blank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_logo_black" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SEARCH SOMETHING, AND YOU WILL GET SOMETHING AWESOME!"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_browse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="3">
+
+    </GridView>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="edu.bluejack151.occasio.Activity.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/ly_register_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:text="Sign up to capture and see the moments."
+            android:textColor="@color/colorText" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_txtEmail_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorText">
+
+            <EditText
+                android:id="@+id/txtEmail_Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_useremail"
+                android:maxLines="1"
+                android:textColor="@color/colorText"
+                android:theme="@style/ThemeEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_txtUsername_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorText">
+
+            <EditText
+                android:id="@+id/txtUsername_Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_username"
+                android:maxLines="1"
+                android:textColor="@color/colorText"
+                android:theme="@style/ThemeEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_txtPassword_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorText">
+
+            <EditText
+                android:id="@+id/txtPassword_Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:textColor="@color/colorText"
+                android:theme="@style/ThemeEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgvProfilePicture_Register"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_no_image" />
+
+            <Button
+                android:id="@+id/btnChooseFile_Register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:drawableLeft="@drawable/ic_camera_white"
+                android:padding="15dp"
+                android:text="Choose Picture"
+                android:textColor="@color/colorText"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblError_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Error"
+            android:textColor="#ff0000"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnRegister_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Sign Up"
+            android:textColor="@color/colorText"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

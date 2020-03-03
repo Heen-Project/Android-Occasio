@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Occasio</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Occasio</string>
+    <string name="facebook_app_id">988492781222014</string>
+    <string name="drawer_opened">Drawer Opened</string>
+    <string name="drawer_closed">Drawer Closed</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="hint_useremail">Email</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_caption">Caption</string>
+    <string name="hint_search">Search</string>
+    <string name="hint_add_comment">Add comment</string>
+</resources>
